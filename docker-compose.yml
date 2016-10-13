@@ -4,6 +4,8 @@ services:
     image: zookeeper
     ports:
       - "2181:2181"
+    logging:
+      driver: fluentd
   kafka:
     image: kafka
     ports:
@@ -15,3 +17,5 @@ services:
       KAFKA_ADVERTISED_HOST_NAME: 192.168.99.100
     volumes:
       - ./data:/kafka
+    logging:
+      driver: fluentd
