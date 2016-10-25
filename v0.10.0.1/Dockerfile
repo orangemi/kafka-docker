@@ -1,6 +1,6 @@
 FROM java:8-jre-alpine
 
-MAINTAINER Qing Yan <admin@zensh.com>
+MAINTAINER Orange Mi <orangemiwj@gmail.com>
 
 RUN apk add --update unzip wget curl bash && rm -rf /var/cache/apk/*
 
