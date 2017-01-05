@@ -4,7 +4,7 @@ MAINTAINER Orange Mi <orangemiwj@gmail.com>
 
 RUN apk add --update unzip wget curl bash && rm -rf /var/cache/apk/*
 
-ENV KAFKA_VERSION="0.10.0.1" SCALA_VERSION="2.11"
+ENV KAFKA_VERSION="0.10.0.2" SCALA_VERSION="2.11"
 
 RUN mkdir /opt && \
   wget -q "http://mirrors.cnnic.cn/apache/kafka/${KAFKA_VERSION}/kafka_${SCALA_VERSION}-${KAFKA_VERSION}.tgz" -O "/tmp/kafka_${SCALA_VERSION}-${KAFKA_VERSION}.tgz" && \
